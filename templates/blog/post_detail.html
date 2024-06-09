@@ -1,0 +1,10 @@
+<!-- templates/blog/post_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <article>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <p>Published on: {{ post.published_date }}</p>
+    </article>
+{% endblock %}

@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(45deg, #E0F7FA, #B2EBF2);
+    color: #004D40;
+    padding: 5px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar {
+    max-width: 1200px;
+    margin-left: 5px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #004D40;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #004D40;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #00796B;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post styles */
+.post {
+    margin-bottom: 40px;
+}
+
+.post h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.post p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li:last-child {
+        margin-right: 0;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .post h2 {
+        font-size: 24px;
+    }
+
+    .post p {
+        font-size: 16px;
+    }
+}
